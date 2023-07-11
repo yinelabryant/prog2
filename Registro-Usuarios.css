@@ -1,0 +1,111 @@
+/*importar fuentes a utilizar*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand&display=swap');
+body{
+    padding:0px;
+    margin: 0%;
+    background: url("Registro\ de\ usuario.png") no-repeat;
+    background-size: cover;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+/*logo de la empresa dentro del banner*/
+header .logo{
+    height: 105px;
+    width: 120px;
+    float: left;
+    margin-top: 3px;
+}
+/*contenedor con los link a las redes sociales*/
+header .redes{
+    width: fit-content;
+    align-content: end;
+    align-items: right;
+    display: flex;
+    flex-direction: row;
+    padding-top: 2.3%;
+}
+/*cada imagen de red social individual*/
+header .icon{
+    padding: 7px;
+    width: 30px;
+    height:30px;
+}
+/* barra de navegacion*/
+header ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline;
+    vertical-align: middle;
+
+}
+  .main{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    gap: 20vh;
+    width: 40%;
+}
+.izquierda{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+}
+.izquierda form{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.izquierda label{
+    font-size: 2.8vh;
+    margin-bottom: 1vh;
+    text-align: left;
+}
+
+.izquierda input{
+    border: 0.5vh solid #B8E28A;
+    border-radius: 3vh;
+    background-color: transparent;
+    padding: 1.5vh 7vh;
+    margin-bottom: 2vh;
+}
+
+.izquierda .button{
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 0.5vh;
+    background-color: #5EC57E;
+    border: none;
+    padding: 1.5vh 10vh;
+    font-size: 2vh;
+    font-weight: bold;
+    color: white;
+}
+
+.izquierda .button:hover{
+    background-color: transparent;
+    border: solid 2px #5EC57E;
+    color: #5EC57E;
+    cursor: pointer;
+}
+
+.derecha .logo{
+    width: 50vh;
+}
+
+@media screen and (max-width: 950px) {
+    .main{
+        flex-direction: column-reverse;
+        gap: 10vh;
+    }
+    
+}

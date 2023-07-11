@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--Estableciendo el set de caracteres e informacion de la pag-->
+    <meta charset="UTF-8">
+    <title>Registro-QuimicaBiologia</title>
+    <!--Referencia externa al css-->
+    <link rel="stylesheet" href="general.css">
+</head>
+<body id="curso-back">
+    <!-- banner en la parte superior de la pantalla-->
+    <header class="contacheader">
+        <img class="logo" src="logoblanco.png" alt="logo">
+    <!-- lista con los links de navegacion dentro del sitio-->
+    <nav>
+        <ul class="nav"> 
+            <li><a href="Home.html">Inicio</a></li>
+            <li><a href="Referencia.html">Referencias</a></li>
+            <li><a href="contactanos.html">Contáctanos</a></li>
+            <li><div class="dropdown">
+                <button class="dropboton">Cursos</button>
+                <div class="dropcontenido">
+                    <a href="CienciasNat.html">Curso de Ciencias Naturales</a>
+                    <a href="QuimBio.html">Curso de Quimica-Biologia</a>
+                    <a href="Registro-Prog.html">Curso de Programación</a>
+                </div>
+            </div></li>
+          </ul>
+          <!--contenedor con iconos y enlaces a las redes sociales-->
+          <div class="redes">
+            <a href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjsxNKFitf_AhVis4QIHSMuBUYQPAgI"><img class="icon" src="search.png"></a>
+            <a href="https://www.facebook.com/profile.php?id=100093968358064"><img class="icon" src="facebook.png"></a>
+            <a href="https://www.instagram.com/solociencia_panama/"><img class="icon" src="ig.png"></a>
+            <a href="https://twitter.com/proyecto_f24181"><img class="icon" src="tw.png"></a>
+          </div>
+    </nav>
+    </header>
+    <!-- fin header -->
+    <!-- Cuerpo del sitio -->
+    <section class="formulario-registro">
+     <h2>👨‍🔬⚗️🧪💊Curso de Química y Biología 👨‍🔬⚗️🧪💊</h2>
+        <form action="registro2.jsp" method="post">
+            <div class="inputs">
+                <label for="nomb">Nombre Completo</label>
+                <input type="text" id="nomb" name="nombre" class="cajatexto">
+                <br><label for="cedula">Cédula</label>
+                <input type="text" id="cedula" name="cedula" class="cajatexto"></div>
+                <br><div class="radios"><label for="fecha">Fecha de inicio: </label><br>
+                <input type="radio" value="20 de julio" name="fecha" id="r1"><label for="r1">20 de julio</label><br>
+                <input type="radio" value="24 de octubre" name="fecha" id="r2"><label for="r2">24 de octubre</label><br>
+                <input type="radio" value="14 de noviembre" name="fecha" id="r3"><label for="r3">14 de noviembre</label></div><br><br>
+            <input type="submit" value="Enviar" class="boton"><br><br><br>
+        </form>
+    </section>
+</body>
+ <!-- inicio footer -->
+ <footer>
+    <div class="footer-contenido">
+        <ul class="links">
+            <li><a href="Home.html">Inicio</a></li>
+            <li><a href="">Referencias</a></li>
+            <li><a href="Cursos.html">Cursos</a></li>
+            <li><a href="contactanos.html">Contáctanos</a></li>
+        </ul>>
+        <a href="Pagina1.html"><img id="perfilicon" src="perfil.png"></a>
+        <h2 class="titulo-footer">© Solo Ciencia, 2023</h2>
+    </div>
+</footer>
+<!-- fin footer -->
+</html>

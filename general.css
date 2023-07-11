@@ -1,0 +1,465 @@
+/*importar fuentes a utilizar*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand&display=swap');
+body{
+    padding:0px;
+    margin: 0%;
+}
+/*logo de la empresa dentro del banner*/
+header .logo{
+    height: 105px;
+    width: 120px;
+    margin-left: 50px;
+    margin-right: 75px;
+    float: left;
+    margin-top: 3px;
+}
+/*contenedor con los link a las redes sociales*/
+header .redes{
+    width: fit-content;
+    align-content: end;
+    align-items: right;
+    display: flex;
+    flex-direction: row;
+    margin-left: 75%;
+    margin-right: 5%;
+    padding-top: 2.3%;
+}
+/*cada imagen de red social individual*/
+header .icon{
+    padding: 7px;
+    width: 30px;
+    height:30px;
+}
+/* barra de navegacion*/
+header ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline;
+    vertical-align: middle;
+
+}
+
+header li{
+    padding-top: 2.3%;
+    float: left;
+}
+  header li a { 
+    text-decoration: none;
+    font-size: 18px;
+    color: #3E3A4E;
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+  }
+
+  header li a:hover{
+    color:#5EC57E;
+  }
+  
+  /*menu dropdown de registro de cursos*/
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    margin-top: 12px;
+    
+}
+/*palabra que activa el dropdown osea cursos*/
+.dropdown .dropboton {
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-size: 18px;
+    color: #3E3A4E;
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    text-align: center;
+    padding-top: 3%;
+    float: left;
+    margin: 0; 
+    background-color:inherit;
+}
+
+/*Contenedor de las palabras o bloque que saldra*/
+.dropcontenido {
+    display: none;
+    position: absolute;
+    background-color: #3E3A4E;
+    min-width: 160px;
+    z-index: 1;
+    
+}
+/*Enlaces a las pag de registro*/
+.dropcontenido a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    
+}
+
+
+/*para que aparezca cuando se haga hover*/
+.dropdown:hover .dropcontenido {
+    display: block;
+    margin-top:27px;
+}
+  
+/* fin de estilos de header */
+
+/*Inicio de estilos de la pag de contactanos*/
+
+.titulo {
+    font-family: 'Open Sans', sans-serif;
+    color: #5EC57E;
+}
+
+#Homeicon{
+    margin-left: 43%;
+    padding-bottom: 20px;
+}
+/*contenedor del banner en la parte superior*/
+.contacheader{
+    width: 100%;
+    background-color: white;
+    color: #3E3A4E;
+    height: 110px;
+
+} 
+
+.perfiles-contenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+/*para los tres contenedores de perfiles de los integrantes del grupo*/
+.caja {
+    width: 33.3333%;
+    align-items:center;
+}
+
+.perfil-foto{
+    width: 70%;
+    height: 65%;
+    padding-left: 75px;
+    padding-top: 40px;
+}
+
+#c1{
+    background-color: #F7FDF3;
+}
+
+#c2{
+    background-color: #ECF8E5;
+}
+
+#c3{
+    background-color: #DCF4CE;
+}
+
+p{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+/*Fin de estilos de la pag de contactanos*/
+
+/*Estilos de la pag de cursos*/
+.lista-curso{
+    margin-top: 60px;
+    margin-bottom: 11.7%;
+}
+.lista-curso h2{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-align: center;
+
+}
+.lista-curso h4{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-align: center;
+
+}
+
+.lista-curso h4:hover{
+    color: #3E3A4E;
+}
+
+#cursos{
+    background-color:#5EC57E;
+  
+}
+/*Fin de estilos de la pag de cursos*/
+
+/* inicio de estilos de footer */
+footer{
+    width: 100%;
+    background-color: #3E3A4E;
+}
+footer .footer-contenido{
+    display: flex;
+    flex-direction: row;
+}
+
+footer .footer-contenido .links a{
+    color: #FFF;
+    font-size:15px;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 20px;
+    padding-top: 20px;
+
+}
+
+footer .footer-contenido .links a:hover{
+    color: #5EC57E;
+
+}
+footer .footer-contenido .links li{
+    list-style: none;
+}
+footer .footer-contenido .titulo-footer{
+    color: #FFF;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 40px;
+    padding-top: 35px;
+
+}
+
+#perfilicon{
+    width: 30px;
+    height: 30px;
+    padding-top: 40px;
+    padding-left: 900px;
+    padding-right: 10px;
+}
+
+/* fin de estilos de footer */
+
+/*registro al curso*/
+#curso-back{
+    background-image: url('istockphoto-639407632-612x612.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:50% 50%;
+}   
+
+.lista-curso a{
+    text-decoration:underline;
+    text-decoration-color:white;
+}
+
+/*formulario de registro a curso*/
+.boton{
+    background-color: #DCF4CE;
+    border-radius: 20px;
+    color: #3E3A4E;
+    border: none;
+    width: 80px;
+    height: 30px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+}
+
+.formulario-registro{
+    background-color: rgba(94, 197, 126, 0.8);
+    width: max-content+50px;
+	margin:20%;
+	align-items:center;
+
+
+}
+
+.formulario-registro h2{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 3%;
+    font-weight:lighter;
+}
+.formulario-registro label{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    color:white;
+}
+
+.cajatexto{
+    background-color: #ECF8E5;
+    border: 9px;
+    border-color: #B8E28A;
+    border-radius: 20px;
+    width: 250px;
+    height: 25px;
+    font-family: 'Quicksand', sans-serif;
+    padding-left:10px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+  
+    
+}
+
+.radios{
+    display:block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.radios label{
+    padding-left: 10px;
+}
+
+
+/*estilos del jsp de registro a curso*/
+
+.action{
+    background-image: url('back-jspcurso.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:50% 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+.biglogo{
+    height: auto;
+    width: auto;
+    margin-top:50px;
+}
+
+.action h2{
+	font-family: 'Open Sans', sans-serif;
+	color: #3E3A4E;
+	
+}
+
+.action a{
+	font-family: 'Quicksand', sans-serif;
+	color: #5EC57E;
+	text-decoration:none;
+	
+}
+
+
+/*PAGINA DE REFERENCIAS*/
+.tablap{
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 82.5%;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+/*Alinear texto de la tabla*/
+table{
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: 3px;
+    justify-content: center;
+    border:1;
+  
+}
+
+table td{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+
+/*Sombreo del click*/
+table td:hover {
+    background-color: #031FA2;
+    color:white;
+    cursor: pointer;
+    
+}
+table td:hover a{
+    color: #FFFFFF;
+}
+
+
+table a{
+    text-decoration: none;
+    color: #3E3A4E;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+.naranja{
+    background-color: #F7CAAC;
+}
+.celeste{
+    background-color: #FFE599;
+}
+.verde{
+    background-color: #FFFF00;
+}
+.amarillo{
+    background-color: #68FB61;
+}
+.morado{
+    background-color: #ddabff;
+}
+.gris{
+    background-color: #ffc5a8;
+}
+.rosado{
+    background-color: hotpink;
+}
+.rojo{
+    background-color: #E2EFD9;
+}
+.choco{
+    background-color: #00CCFF;
+}
+
+#back{
+	background-color:#ECF8E5;
+}
+.vacio:hover{
+	background-color: transparent;	
+}
+/*fin de pag de referencias*/
+
+/*estilos de la pag home*/
+
+.main{
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 82.5%;
+    display: flex;
+    flex-direction: column;
+}
+.noticia{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;    
+}
+.noticia .texto .titulo{
+    margin-top: 0;
+    font-size: 25px;
+    font-weight: 600;
+}
+/*fin de estilos de home*/
